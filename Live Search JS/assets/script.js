@@ -5,9 +5,9 @@ searchInput.addEventListener('input', function() {
     let filter = searchInput.value.toLowerCase();
     
     itemsList.forEach(element => {
-            if(element.textContent.toLowerCase().includes(filter) || filter === '')
-                element.style = 'display: block;';
-            else
-                element.style = 'display: none;';
-        });
+        if(element.textContent.toLowerCase().includes(filter) || filter === '')
+            element.style = 'display: block;';
+        else
+            element.style = 'display: none;';
+    });
 })
