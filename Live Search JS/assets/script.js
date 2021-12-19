@@ -10,4 +10,4 @@ searchInput.addEventListener('input', function() {
         else
             element.style = 'display: none;';
     });
-})
+});
