@@ -1,0 +1,84 @@
+﻿/* CSS Variables */
+:root {
+    /* Colors */
+    --main-clr: #210625;
+    --second-clr: #F5F6E7;
+    --alt-clr: #5A3764;
+
+    /* Fonts */
+    --font: 'Arial'; 
+    --h1-fs: 1.6rem;
+    --input-fs: 1.3rem;
+    --list-fs: 1.1rem;
+
+    /* Gaps */
+    --gap-1: 1rem;
+    --gap-1-5: 1.5rem;
+    --gap-2: 2rem;
+}
+
+/* Elements Setups */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #210625;
+}
+
+input, h1, li {
+    font-family: var(--font);
+    color: var(--main-clr);
+}
+
+h1, li {
+    color: var(--main-clr);
+}
+
+h1 {
+    font-size: var(--h1-fs);
+}
+
+li {
+    padding: .2rem;
+    border-radius: .5rem;
+    font-size: var(--list-fs);
+}
+
+input {
+    font-size: var(--input-fs);
+    background: transparent;
+    padding: .3rem;
+    border: 0;
+    border-bottom: .2rem solid var(--main-clr);
+    outline: none;
+}
+
+input:focus {
+    border-color: var(--alt-clr);
+    color: var(--alt-clr);
+}
+
+/* Classes */
+.main__panel, .panel__head, .panel__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--gap-2);
+}
+
+.main__panel {
+    background-color: var(--second-clr);
+    padding: 2rem;
+    border-radius: 1rem;
+    min-height: 500px;
+}
+
+.panel__list {
+    row-gap: var(--gap-1);
+}
